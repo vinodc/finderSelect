@@ -186,11 +186,11 @@
                         f.t.shiftClick(p,c,o);
                     }
 
-                    if (((f.detect.ctrl(e) && o.enableCtrlClick) || (f.detect.touch() && o.enableTouchCtrlDefault) || o.enableDesktopCtrlDefault) && !(f.detect.shift(e) && o.enableShiftClick)) {
+                    else if (((f.detect.ctrl(e) && o.enableCtrlClick) || (f.detect.touch() && o.enableTouchCtrlDefault) || o.enableDesktopCtrlDefault) && !(f.detect.shift(e) && o.enableShiftClick)) {
                         f.t.toggleClick(p,c,o);
                     }
 
-                    if (!(f.detect.ctrl(e) && o.enableCtrlClick) && !(f.detect.shift(e) && o.enableShiftClick) && o.enableSingleClick && !o.enableDesktopCtrlDefault) {
+                    else if (!(f.detect.ctrl(e) && o.enableCtrlClick) && !(f.detect.shift(e) && o.enableShiftClick) && o.enableSingleClick && !o.enableDesktopCtrlDefault) {
                         f.t.singleClick(p,c,o);
                     }
                 }
